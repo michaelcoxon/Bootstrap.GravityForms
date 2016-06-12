@@ -1,0 +1,223 @@
+﻿/*!
+ *  Copyright 2016 Michael Coxon 
+ *  https://github.com/michaelcoxon/Bootstrap.GravityForms
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+body {
+    .gform_wrapper {
+        .gform_body {
+            @extend .form-horizontal;
+        }
+
+        ul {
+            @extend .list-unstyled;
+            @extend .col-xs-12;
+        }
+
+        li {
+            @extend .form-group;
+        }
+
+        form {
+            margin-bottom: 0;
+        }
+
+        .gf_progressbar_title {
+            @extend .h4;
+        }
+
+        .gf_progressbar {
+            @extend .progress;
+            background-color: $gray-lighter;
+
+            .gf_progressbar_percentage {
+                @extend .progress-bar;
+
+                span {
+                }
+            }
+        }
+
+        .gfield_required {
+            padding-left: 1px;
+            color: $state-danger-text;
+        }
+
+        .gfield_label {
+            @extend .h4;
+        }
+
+        .gfield.gsection.field_sublabel_above.field_description_above {
+            margin-top: 0; //($line-height-computed * 0.5);
+            margin-bottom: $line-height-computed;
+            border-bottom: 1px solid $page-header-border-color;
+
+            h2 {
+                @extend .h3;
+            }
+
+            .gsection_description {
+                @extend .help-block;
+            }
+        }
+
+        .ginput_container {
+            /*&:not(.ginput_complex) {
+                @extend .col-xs-12;
+            }*/
+            input:not([type=checkbox]):not([type=radio]),
+            select,
+            textarea {
+                @extend .form-control;
+            }
+
+            input[type=checkbox] {
+            }
+
+            .gfield_radio li {
+                @extend .form-control-static;
+
+                input[type=radio] {
+                    vertical-align: middle;
+
+                    & + label {
+                        padding-left: 20px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            textarea {
+                height: auto;
+            }
+
+            &.ginput_complex {
+                overflow: visible;
+            }
+
+            label {
+                @extend .control-label
+            }
+        }
+
+        .ginput_complex {
+            @extend .row;
+            width: auto;
+
+            .ginput_left, .ginput_right, .name_first, .name_last {
+                @extend .col-xs-12;
+                @extend .col-lg-6;
+            }
+
+            .ginput_right {
+                margin-left: 0;
+            }
+
+            .ginput_full {
+                @extend .col-xs-12;
+            }
+        }
+
+        .gfield_description {
+            @extend .help-block;
+        }
+
+        .gform_button, .button {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+
+        li.gfield.gfield_error, .gfield_error {
+            @extend .alert;
+            @extend .alert-danger;
+            border-top: 1px solid $alert-danger-border;
+            border-bottom: 1px solid $alert-danger-border;
+
+            .gfield_label {
+                color: $state-danger-text;
+            }
+
+            input,
+            select,
+            textarea {
+                border-color: $alert-danger-border;
+                background-color: $alert-danger-bg;
+                color: $alert-danger-text;
+                @include form-control-focus($alert-danger-text);
+            }
+        }
+
+        div.validation_error, .validation_error {
+            color: $state-danger-text;
+            font-size: 1em;
+            font-weight: normal;
+            margin-bottom: 1.6em;
+            border-top: 1px solid $alert-danger-border;
+            border-bottom: 1px solid $alert-danger-border;
+            padding: $alert-padding;
+            clear: none;
+            width: auto;
+
+            @extend .alert;
+            @extend .alert-danger;
+        }
+
+        #gforms_confirmation_message {
+            @extend .alert;
+            @extend .alert-success;
+        }
+
+        .ginput_container_date {
+
+            input:not([type=checkbox]):not([type=radio]),
+            select,
+            textarea {
+                @extend .form-control;
+                display: inline-block;
+                width: 10em !important;
+            }
+        }
+
+        .ui-datepicker {
+            display: none;
+            margin-top: 4px;
+
+            a:hover,
+            td:hover a {
+                -webkit-transition: color 0.1s ease-in-out;
+                -moz-transition: color 0.1s ease-in-out;
+                -o-transition: color 0.1s ease-in-out;
+                transition: color 0.1s ease-in-out;
+            }
+
+            .ui-datepicker-title {
+                font-weight: 700;
+
+                select {
+                    color: $text-color;
+                }
+            }
+
+            .ui-datepicker-calendar {
+                td {
+                    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+                    -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+                    -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+                    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+                }
+            }
+        }
+    }
+}

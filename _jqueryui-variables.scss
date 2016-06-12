@@ -1,0 +1,102 @@
+$ffDefault: $font-family-sans-serif !default;
+$fsDefault: $font-size-base !default;
+
+
+$iconsContent: url(../../images/jquery-ui/ui-icons_222222_256x240.png) !default;
+$iconsHeader: url(../../images/jquery-ui/ui-icons_bbbbbb_256x240.png) !default;
+$iconsDefault: url(../../images/jquery-ui/ui-icons_bbbbbb_256x240.png) !default;
+$iconsHover: url(../../images/jquery-ui/ui-icons_bbbbbb_256x240.png) !default;
+$iconsActive: url(../../images/jquery-ui/ui-icons_222222_256x240.png) !default;
+$iconsHighlight: url(../../images/jquery-ui/ui-icons_4ca300_256x240.png) !default;
+$iconsError: url(../../images/jquery-ui/ui-icons_ffcf29_256x240.png) !default;
+
+
+$cornerRadius: $border-radius-base !default;
+$opacityOverlay: .3 !default;
+$opacityFilterOverlay: Alpha(Opacity=30) !default;
+$offsetTopShadow: -8px !default;
+$offsetLeftShadow: -8px !default;
+$thicknessShadow: 8px !default;
+$opacityShadow: .2 !default;
+$opacityFilterShadow: Alpha(Opacity=20) !default;
+$cornerRadiusShadow: $border-radius-base !default;
+
+
+$bgColorContent: $panel-bg !default;
+$bgImgUrlContent: none !default; //url(../../images/jquery-ui/ui-bg_highlight-hard_100_f9f9f9_1x100.png) !default;
+$bgContentXPos: 50% !default;
+$bgContentYPos: top !default;
+$bgContentRepeat: repeat-x !default;
+$borderColorContent: $btn-default-border !default;
+$fcContent: $text-color !default;
+$borderColorHeader: $btn-default-border !default;
+$fcHeader: $headings-color !default;
+
+
+$bgColorHeader: $panel-default-heading-bg !default;
+$bgImgUrlHeader: none !default; //url(../../images/jquery-ui/ui-bg_diagonals-thick_8_333333_40x40.png) !default;
+$bgHeaderXPos: 50% !default;
+$bgHeaderYPos: 50% !default;
+$bgHeaderRepeat: repeat !default;
+
+
+$bgColorDefault: $btn-default-bg !default;
+$bgImgUrlDefault: none !default; //url("../../images/jquery-ui/ui-bg_glass_40_111111_1x400.png") !default;
+$bgDefaultXPos: 50% !default;
+$bgDefaultYPos: 50% !default;
+$bgDefaultRepeat: repeat-x !default;
+$borderColorDefault: $btn-default-border !default;
+$fwDefault: normal !default;
+$fcDefault: $text-color !default;
+
+
+$bgColorHover: $btn-default-bg !default;
+$bgImgUrlHover: none !default; //url("../../images/jquery-ui/ui-bg_glass_55_1c1c1c_1x400.png") !default;
+$bgHoverXPos: 50% !default;
+$bgHoverYPos: 50% !default;
+$bgHoverRepeat: repeat-x !default;
+$borderColorHover: $btn-default-border !default;
+$fwHover: normal !default;
+$fcHover: $btn-default-color !default;
+
+
+$bgColorActive: $btn-primary-bg !default;
+$bgImgUrlActive: none !default; //url("../../images/jquery-ui/ui-bg_flat_65_ffffff_40x100.png") !default;
+$bgActiveXPos: 50% !default;
+$bgActiveYPos: 50% !default;
+$bgActiveRepeat: repeat-x !default;
+$borderColorActive: $btn-primary-border !default;
+$fwActive: normal !default;
+$fcActive: $btn-primary-color !default;
+
+
+$bgColorHighlight: $btn-info-bg !default;
+$bgImgUrlHighlight: none !default; //url("../../images/jquery-ui/ui-bg_inset-hard_55_ffeb80_1x100.png") !default;
+$bgHighlightXPos: 50% !default;
+$bgHighlightYPos: bottom !default;
+$bgHighlightRepeat: repeat-x !default;
+$borderColorHighlight: $btn-info-border !default;
+$fcHighlight: $btn-info-color !default;
+
+
+$bgColorError: $btn-danger-bg !default;
+$bgImgUrlError: none !default; //url("../../images/jquery-ui/ui-bg_inset-hard_45_cd0a0a_1x100.png") !default;
+$bgErrorXPos: 50% !default;
+$bgErrorYPos: bottom !default;
+$bgErrorRepeat: repeat-x !default;
+$borderColorError: $btn-danger-border !default;
+$fcError: $btn-danger-color !default;
+
+
+$bgColorOverlay: $gray-light !default;
+$bgImgUrlOverlay: none !default; //url("../../images/jquery-ui/ui-bg_highlight-hard_40_aaaaaa_1x100.png") !default;
+$bgOverlayXPos: 50% !default;
+$bgOverlayYPos: top !default;
+$bgOverlayRepeat: repeat-x !default;
+
+
+$bgColorShadow: #aaaaaa !default;
+$bgImgUrlShadow: none !default; //url("../../images/jquery-ui/ui-bg_highlight-soft_50_aaaaaa_1x100.png") !default;
+$bgShadowXPos: 50% !default;
+$bgShadowYPos: top !default;
+$bgShadowRepeat: repeat-x !default;
